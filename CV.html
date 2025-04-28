@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum Vitae</title>
+  <style>
+    /* Colores principales */
+    :root {
+      --rojo-ladrillo: #B22222;
+      --rojo-claro: #FBEAEA;
+      --gris-claro: #F1F1F1;
+      --gris-super-claro: #FAFAFA;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--gris-super-claro);
+      color: #333;
+    }
+
+    .contenedor-principal {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .contenedor-header {
+      display: flex;
+      align-items: center;
+      background-color: var(--rojo-ladrillo);
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .contenedor-header img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-right: 20px;
+    }
+
+    .contenedor-header div h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .contenedor-header div p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    /* Secciones principales */
+    .contenedor-secciones {
+      display: flex;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .contenedor-izquierda, .contenedor-derecha {
+      flex: 1;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .contenedor-izquierda {
+      background-color: var(--rojo-claro);
+    }
+
+    .contenedor-derecha {
+      background-color: var(--gris-claro);
+    }
+
+    /* Títulos de sección */
+    h2 {
+      position: relative;
+      display: inline-block;
+      background-color: var(--rojo-ladrillo);
+      color: white;
+      padding: 5px 10px;
+      margin-top: 0;
+      border-radius: 3px;
+      font-size: 1.2em;
+    }
+
+    /* Listas con viñetas personalizadas */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    ul li::before {
+      content: '\25B8';
+      color: var(--rojo-ladrillo);
+      margin-right: 8px;
+    }
+
+    /* Footer */
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: var(--rojo-claro);
+      border-radius: 5px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .footer-item {
+      text-align: center;
+    }
+
+    .footer-item span.icono {
+      display: block;
+      font-size: 1.5em;
+      color: var(--rojo-ladrillo);
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor-principal">
+
+    <header class="contenedor-header">
+        <img src="20240910_191333.jpg" alt="Foto de Perfil">
+      <div>
+        <h1>José Vejar</h1>
+        <p>Tecnico en Programación</p>
+      </div>
+    </header>
+
+    <div class="contenedor-secciones">
+
+      <section class="contenedor-izquierda">
+        <h2>Descripción Personal</h2>
+        <p>Trabajo en equipo, Responsabilidad y
+            compromiso,
+            Rápido aprendizaje,
+            Nivel medio sobre equipos
+            computacionales,
+            Organizado,
+            Ingles Basico.</p>
+
+        <h2>Tecnologías</h2>
+        <ul>
+          <li>Nivel Medio de HTML, Junto a un nivel basico de Css</li>
+          <li>Nivel Medio de Uso del Lenguaje Python</li>
+          <li>Nivel Alto de Conocimiento en Componentes de Hardware y Mantenimiento de Estos ademas de conociento en sistemas operativos</li>
+        </ul>
+      </section>
+
+      <section class="contenedor-derecha">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+          <li>Conaf, Temuco: Áreas Verdes:
+           Trabaje en áreas verdes despejando senderos turísticos,para garantizar la seguridad de los ciclistas y senderistas
+           además de mantener la limpieza de los caminos asfaltados para los vehículos.</li>
+        </ul>
+
+        <h2>Antecedentes Académicos</h2>
+        <ul>
+          <li>Colegio Excelsior enseñanza Basica Kinder-1ro (2007)</li>
+          <li>Colegio Las Americas 2do-8vo Basico (2008-2018)</li>
+          <li>Liceo Tecnico Las Americas 1ro-4to Medio (2019-2023) </li>
+          <li>Actualmente Cursando una carrera en CiberSeguridad Tercer Semestre (2024-2025) </li>
+        </ul>
+
+        <h2>Otros Estudios o Certificaciones</h2>
+        <ul>
+          <li>Tecnico en Programación</li>
+          <li>Primer puesto a nivel regional en el programa Go Innova de Inacap (2022), al siguiente año participando nuevamente. </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <footer class="contenedor-footer">
+      <div class="footer-item">
+        <span class="icono">📧</span>
+        das14736@gmail.com
+      </div>
+      <div class="footer-item">
+        <span class="icono">📱</span>
+        +56 9 3576 8217
+      </div>
+      <div class="footer-item">
+        <span class="icono">📍</span>
+        Cariquiña<br>
+        Nº 01383
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
